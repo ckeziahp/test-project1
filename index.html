@@ -1,67 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Akosua's-Bakery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BakesCafe</title>
     <link href="https://fonts.googleapis.com/css2?family=Jost&family=Poiret+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/syles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <nav>
-        <ul class="icons-header">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-        </ul>
-        <img id="logo-img" src="./assets/logos/bakes-cafe-high-resolution-logo-transparent.png" alt="">
-        <button class="call-me">Call Us:+............</button>
-    </nav>
-
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="cakes.html">Cakes</a>
-        <a href="about.html">About</a>
-        <div class="dropdown">
-            <a href="blog.html" class="dropbtn">Blog</a>
-            <div class="dropdown-content">
-                <a href="#">Blog</a>
-                <a href="#">Blog Details</a>
-                <a href="#">Elements</a>
+    <section class="menu">
+        <div class="nav">
+            <div class="logo"><h1>Bakes<b>Cafe</b></h1></div>
+            <!-- <img src="./assests/images/flour-background.png" alt="Flour Png Image With Transparent Background - Flour Png@pngkey.com"> -->
+            <!-- <img id="logo-img" src="./assets/logos/bakes-cafe-high-resolution-logo-transparent.png" alt=""> -->
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+            
+            <div>
+                <input class="signin" type="submit" value="Sign In" name="signin">
+                <input class="signup" type="submit" value="Sign Up" name="signin">
             </div>
-            <a href="contact.html">Contact</a>
         </div>
-   </div>
+    </section>
+    <section class="grid">
+        <div class="content">
+            <div class="content-left">
+                <div class="info">
+                    <h2>Order Your Best <br> Anytime</h2>
+                    <p>Hey, Our Delicious Pasteries is waiting for you<br>
+                    We are always near you with fresh Pasteries</p>
+                </div>
+                <button>Explore Pasteries</button>
+            </div>
+            <div class="content-right">
+                <img src="./assets/images/bite-cake.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <div class="list-items">
+            <h3>Popular Dishes</h3>
+            <div class="card-list">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="food-title">
+                        <h1>Raspberry Pie</h1>
+                    </div>
+                    <div class="desc-fod">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor dunt ut labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="price">
+                        <span>$3.99</span><span><i class="fa-solid fa-circle-plus"></i></i></span>
+                    </div>
+                </div>
 
-    <section id="hero">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="menu-lastest-item">
+        <div class="latest-item">
+            <div class="wrap-pic-booking hov-img-zoom m-l-r-auto">
+                <img src="./assets/images/Dough-nut.jpg" alt="">
+                <br><br>
+                <span class="subtext-one">Delightful</span>
+                <p class="subtext-two">Phasellus lorem enim, luctus ut velit eget, con-vallis egestas eros.</p>
+                <br>
+                <a href="" class="food-story">Learn More
+                    &nbsp;<span> <i class="fa-solid fa-arrow-right"></i></span> </a>
+            </div>
+            <div class="wrap-pic-booking hov-img-zoom m-l-r-auto">
+                <img src="./assets/images/dough.jpg" alt=""><br>
+                <span class="subtext-one">Raspberrey</span>
+                <p class="subtext-two"> Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna</p>
+                <br>
+                <a href="" class="food-story">Learn More
+                    &nbsp;<span> <i class="fa-solid fa-arrow-right"></i></span> </a>
+            </div>
+            <div class="wrap-pic-booking hov-img-zoom m-l-r-auto">
+                <img src="./assests/images/chocolate-doughnut.jpg" alt="">
+                <span class="head-one">Doughnut</span>
+                <p class="para-one"> If you adorn the ligula eget tortor tempor, quis porta tellus dictum.</p>
+                <br>
+                <a href="" class="food-story">Learn More &nbsp;<span> <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+     </section>   
+
+    <!-- <section id="hero">
         <div id="hero-overlay">
         <header>
-            <h1 id="subtext-one" class="Jost">Bakes Cafe</h1>
+        
         </header>
-        <button class="menu-button">Order Now</button>
         </div>
         
-    </section>
-
-    <section id="about-area">
-        <div id="about-text">
-            <div class="container">
-                <h2 id="subtext-two" class="Jost">This is Bakes Cafe.
-                 </h2>
-                <h2 id="subtext-two" class="Jost">Is lekker.
-                 </h2>
-            </div>
-        </div>
-    </section>
-
+    </section> -->
    
+   
+</section>
+<!-- <section>Gallery
+    <div thumbsSlider="" class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </section> -->
 </body>
-
-
 </html>
