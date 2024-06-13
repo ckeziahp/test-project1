@@ -178,70 +178,49 @@ input{
   font-family: poriet, sans-serif;
   margin-bottom: 70px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* siwper-gallery */
-
-
-/* body {
-  background: #000;
-  color: #000;
+.category .category.list-items .card-list{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-
-.swiper {
-  width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-slide {
-  background-size: cover;
-  background-position: center;
-}
-
-.mySwiper2 {
-  height: 80%;
-  width: 100%;
-}
-
-.mySwiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
-
-.mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-  opacity: 0.4;
-}
-
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-}
-
-.swiper-slide img {
+.category .card-list .card{
+  width: 200px;
+  height: auto;
   display: block;
-  width: 100%;
-  height: 100%;
+  padding: 10px;
+  background-color: #ffffff;
+  outline: 2px solid #faad96 ;
+}
+
+.category .card-list .card img{
+  width: 200px;
+  height: auto;
   object-fit: cover;
-} */
+  object-position: center;
+  background-repeat: no-repeat;
+}
 
+.fresh h1{
 
+}
+
+#fresh-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cup{
+  width: 50px;
+  height: 50px;
+}
+#cheese{
+  width: 50px;
+  height: 50px;
+}
+#small{
+  width: 50px;
+  height: 50px;
+}
+#pie{
+  width: 50px;
+  height: 50px;
+}
