@@ -5,9 +5,9 @@
 }
 
 body{
-  margin: 0 100px;
-  background-color: #F08632;
-  overflow-x: hidden;
+  margin: 0;
+  background-color: #FCE7D7;
+  /* overflow-x: hidden; */
 }
 
 .poiret-one-regular {
@@ -27,21 +27,22 @@ body{
 
 /* menu */
 .nav{
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 0;
+  padding: 30px ;
 }
+
 
 .nav .logo h1{
   font-weight: 600;
-  font-family: jost 'sans serif';
+  font-family: "Jost" 'sans serif';
   color: #000000;
 }
 
 .nav .logo b{
-  color: purple;
+  color: #ff511c;
 }
 
 .nav ul{
@@ -55,7 +56,7 @@ body{
   text-decoration: none;
   color: #000000;
   font-weight: 500px;
-  font-family: jost, 'sans serif';
+  font-family: "Jost", 'sans serif';
   font-size: 17px;
 }
 
@@ -95,28 +96,29 @@ input{
 /* content */
 .content{
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 120px;
   align-items: center;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  width: 100vw;
+  padding: 0 4rem;
   
 }
 
 /* content-text */
 .content .content-left{
-  display: block;
-  width: 100%;
+  /* display: block; */
+  /* width: 100%; */
   
 }
 .content .content-left .info{
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 .content .content-left .info h2{
-  font-size: 60 px;
+  font-size: 60px;
   font-family: poriet, sans-serif;
   margin-bottom: 30px;
 }
@@ -142,12 +144,12 @@ input{
 /* right-side */
 .content .content-right {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .content .content-right img{
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   position: relative;
   user-select: none;
   animation: rotate 10s linear infinite;
@@ -168,7 +170,7 @@ input{
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
-  background-color: #f71cff;
+  background-color: #ff511c;
 }
 .category.list-items{
   width: 90%;
@@ -178,7 +180,7 @@ input{
 .category.category h3{
   font-size: 20px;
   font-size: 600;
-  font-family: poriet, sans-serif;
+  font-family: "Poiret One", sans-serif;
   margin-bottom: 70px;
 }
 .category .category.list-items .card-list{
@@ -246,28 +248,33 @@ font-family: jost,sans-serif;
 
 #fresh-images{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+
 }
 #cup{
   width: 250px;
   height: 250px;
+  border-radius: 5px;
 }
 #cheese{
   width: 250px;
   height: 250px;
+  border-radius: 5px;
 }
 #small{
   width: 250px;
   height: 250px;
+  border-radius: 5px;
 }
 #pie{
   width: 250px;
   height: 250px;
+  border-radius: 5px;
 }
 #video-sec{
-  width:100vw;
-  height: 100vh;
+  width:80vw;
+  height: 80vh;
   position: relative;
   margin: 100px;
 }
@@ -276,7 +283,7 @@ font-family: jost,sans-serif;
   width: inherit;
   height: inherit;
   object-fit: cover;
-  padding: 20px;
+  /* padding: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -299,7 +306,10 @@ justify-content: center;
 #video-overlay span:last-child{
   color: rgba(255, 255, 255, 0.9);
 }
-
+/* 
+.swiper-slide{
+width: ;
+} */
 
 
 .footer {
@@ -309,6 +319,7 @@ justify-content: center;
   padding: 10px;
   height: 510px;    
   background-color: #191818;
+  background: url(/assets/images/new-background.jpg);
 }
 
 .footer h4 {
